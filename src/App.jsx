@@ -3,7 +3,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import { increment, decrement, reset } from './redux/counterSlice'
 
 const App = () => {
-  const count = useSelector((state) => state.counter.count)
+  const count = useSelector((state) => state.counter.count);
+  const dispatch = useDispatch();
   return (
     <div>
       <h2>Counter App - Redux Toolkit</h2>

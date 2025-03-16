@@ -17,3 +17,7 @@ const counterSlice = createSlice({
 
 export const { increment, decrement, reset } = counterSlice.actions;
 //this method is called object destructuring, 
+
+export default counterSlice.reducer;
+//jo chez export default kartay han store ma reducer ka andar wo pass kartay han
+// jis naam sa export default kia ho zarori nahi ha ka usi naam sa agay store.js ma call karain 
